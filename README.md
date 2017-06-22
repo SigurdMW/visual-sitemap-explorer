@@ -1,1 +1,1 @@
-# visual-sitemap-explorer
+# Visual Sitemap Explorer
