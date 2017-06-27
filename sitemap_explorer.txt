@@ -1,0 +1,7 @@
+Create a chrome plugin for  visual sitemap explorer?
+
+generate sitemap in js: 
+1. start at root
+2. find all links on the current page
+3. store them in an array/json object tree, split by url so that top level is root /, next level is /about and next level after that is /about/contact and so on
+4. go to next page and repeat

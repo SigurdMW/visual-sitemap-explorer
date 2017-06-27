@@ -7,10 +7,13 @@ var extractPlugin = new ExtractTextPlugin({
 })
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    main: './src/index.js',
+    getpagesource: './src/getPagesSource.js',
+  },
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     publicPath: '/build'
   },
   devServer: {
@@ -44,6 +47,7 @@ module.exports = {
     new HtmlWebpackPlugin({
      title: 'Output Management',
      template: 'static/index.html',
+     chunks: ['main'],
    })
   ]
 }
